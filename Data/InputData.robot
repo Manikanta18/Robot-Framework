@@ -1,4 +1,5 @@
 *** Variables ***
 ${BROWSER} =  edge
-${FRONT_OFFICE_URL} =  https://automationplayground.com/front-office
-${BACK_OFFICE_URL} =  https://automationplayground.com/back-office
+${ENV} =  dev
+&{FRONT_OFFICE_URL} =  dev=https://automationplayground.com/front-office    qa=https://automationplayground.com/front-office    prod=https://automationplayground.com/front-office
+&{BACK_OFFICE_URL} =  dev=https://automationplayground.com/back-office    dqa=https://automationplayground.com/back-office    prod=https://automationplayground.com/back-office
