@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.1 on win32)" generated="2024-08-07T13:08:24.645015" rpa="false" schemaversion="5">
+<suite id="s1" name="End to End" source="C:\Users\Owner\Documents\STUDY\GITHUB\Robot-Framework\tests\EndToEnd\End_to_End.robot">
+<test id="s1-t1" name="Should be able to access both sites" line="13">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-07T13:08:24.825918" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-07T13:08:24.825918" elapsed="2.404590"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:24.824920" elapsed="2.405588"/>
+</kw>
+<kw name="Go to Landing Page" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="FrontOffice.Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-07T13:08:27.231694" level="INFO">Opening url 'https://automationplayground.com/front-office'</msg>
+<arg>${FRONT_OFFICE_URL.${ENV}}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-07T13:08:27.231694" elapsed="3.561815"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:27.231694" elapsed="3.561815"/>
+</kw>
+<kw name="Verify Page Loaded" owner="FrontOffice.Landing">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-07T13:08:30.794514" elapsed="0.012183"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:30.793509" elapsed="0.013188"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:27.230508" elapsed="3.576189"/>
+</kw>
+<kw name="Go to Landing Page" owner="BackOfficeApp">
+<kw name="Navigate To" owner="BackOffice.Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-07T13:08:30.808200" level="INFO">Opening url 'https://automationplayground.com/back-office'</msg>
+<arg>${BACK_OFFICE_URL.${ENV}}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-07T13:08:30.808200" elapsed="0.360612"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:30.808200" elapsed="0.360612"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:30.806697" elapsed="0.362115"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-07T13:08:31.169812" elapsed="6.215475"/>
+</kw>
+<status status="PASS" start="2024-08-07T13:08:31.169812" elapsed="6.215475"/>
+</kw>
+<doc>This is test 1</doc>
+<tag>test1</tag>
+<status status="PASS" start="2024-08-07T13:08:24.823918" elapsed="12.561369"/>
+</test>
+<doc>This is my end to end suite</doc>
+<status status="PASS" start="2024-08-07T13:08:24.646019" elapsed="12.740269"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="End to End">End to End</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
