@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.1 on win32)" generated="2024-08-07T12:19:56.020104" rpa="false" schemaversion="5">
+<suite id="s1" name="End to End" source="C:\Users\Owner\Documents\STUDY\robot\Ex_Files_Robot_Framework_LVL2\Exercise Files\11_06 Script End\end-to-end\tests\EndToEnd\End_to_End.robot">
+<test id="s1-t1" name="Should be able to access both sites" line="13">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:19:56.197306" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2024-08-07T12:19:56.509868" level="WARN">The msedgedriver version (126.0.2592.113) detected in PATH at C:\bin\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (127.0.2651.86); currently, msedgedriver 127.0.2651.86 is recommended for MicrosoftEdge 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-07T12:19:56.197306" elapsed="1.424276"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:19:56.196304" elapsed="1.425278"/>
+</kw>
+<kw name="Go to Landing Page" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="FrontOffice.Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:19:57.622589" level="INFO">Opening url 'https://automationplayground.com/front-office'</msg>
+<arg>${FRONT_OFFICE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-07T12:19:57.622589" elapsed="3.895955"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:19:57.622589" elapsed="3.895955"/>
+</kw>
+<kw name="Verify Page Loaded" owner="FrontOffice.Landing">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-07T12:20:01.519548" elapsed="0.009143"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:20:01.518544" elapsed="0.010147"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:19:57.621582" elapsed="3.907109"/>
+</kw>
+<kw name="Go to Landing Page" owner="BackOfficeApp">
+<kw name="Navigate To" owner="BackOffice.Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-07T12:20:01.529694" level="INFO">Opening url 'https://automationplayground.com/back-office'</msg>
+<arg>${BACK_OFFICE_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-07T12:20:01.529694" elapsed="3.001153"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:20:01.529694" elapsed="3.001153"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:20:01.529694" elapsed="3.001153"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-08-07T12:20:04.531847" elapsed="6.255921"/>
+</kw>
+<status status="PASS" start="2024-08-07T12:20:04.531847" elapsed="6.255921"/>
+</kw>
+<doc>This is test 1</doc>
+<tag>test1</tag>
+<status status="PASS" start="2024-08-07T12:19:56.195799" elapsed="14.591969"/>
+</test>
+<doc>This is my end to end suite</doc>
+<status status="PASS" start="2024-08-07T12:19:56.021107" elapsed="14.767650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="End to End">End to End</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-07T12:19:56.509868" level="WARN">The msedgedriver version (126.0.2592.113) detected in PATH at C:\bin\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (127.0.2651.86); currently, msedgedriver 127.0.2651.86 is recommended for MicrosoftEdge 127.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
