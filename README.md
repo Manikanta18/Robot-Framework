@@ -68,13 +68,13 @@ Robot-Framework/
 │   │   └── End_to_End.robot
 │   ├── FrontOffice/      # Test cases for front office
 │       └── Front_Office.robot
-├── resources/            # Reusable keywords, variables, and page objects
-│   ├── BackOffice/
-│   │   └── PO/           # Page Object (PO) folder
-│   ├── EndToEnd/
-│   │   └── PO/           # Page Object (PO) folder
-│   ├── FrontOffice/
-│       └── PO/           # Page Object (PO) folder
+├── Resources/            # Reusable keywords, variables, and page objects
+│   ├── BackOffice/       # Page Object (PO) folder for back office
+│   │   └── PO/          
+│   ├── Common/           # Resusable common keywords
+│   │   └── CommonWeb.robot
+│   ├── FrontOffice/      # Page Object (PO) folder for front office
+│       └── PO/          
 ├── Results/              # Generated HTML reports and Log files for test execution
 ├── Data/                 
     └── InputData.robot   # Contains Global variables
