@@ -1,6 +1,6 @@
 # Robot Framework Automation Project
 
-This repository contains test automation scripts using **Robot Framework** for web and API testing.
+This repository contains test automation scripts using **Robot Framework** for web testing.
 
 ## Table of Contents
 - [Overview](#overview)
